@@ -1,0 +1,85 @@
+// SECTION :: START
+
+.patients {
+  padding-top: 120px;
+  padding-bottom: 40px;
+  @include adaptive(1439) {
+    padding-top: 80px;
+  }
+  @include adaptive(1023) {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
+
+    &-left {
+      z-index: 2;
+      position: relative;
+      width: 100%;
+      max-width: 812px;
+      padding: 75px;
+      background-image: url('../img/pattern-bg.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      @include adaptive(1439) {
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      @include adaptive(1279) {
+        padding: 50px 25px;
+      }
+    }
+
+    &-right {
+      position: relative;
+      margin-top: 200px;
+      margin-left: -200px;
+      width: calc(100% + 200px);
+      height: 580px;
+      @include adaptive(767) {
+        display: none;
+      }
+
+      img {
+        @extend %imageResCoverAbs;
+      }
+    }
+  }
+
+  &__header {
+    padding-bottom: 50px;
+    @include adaptive(767) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__desc {
+    padding-bottom: 40px;
+  }
+
+  &__btn {
+    @include adaptive(767) {
+      justify-content: center;
+    }
+
+    .c-btn {
+      border-color: transparent;
+
+      i {
+        &:before,
+        &:after {
+          background-color: $c-white;
+        }
+      }
+    }
+  }
+}
+
+// SECTION :: END
