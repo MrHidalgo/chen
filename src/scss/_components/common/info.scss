@@ -80,16 +80,6 @@
       justify-content: space-between;
     }
 
-    &-link {
-      display: flex;
-      font-weight: bold;
-      font-size: 16px;
-      letter-spacing: 0.1em;
-      line-height: 36px;
-      color: #326b6e;
-      text-transform: uppercase;
-    }
-
     &-address {
       display: grid;
       grid-template-columns: 1fr;
