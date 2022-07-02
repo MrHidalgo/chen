@@ -9,13 +9,18 @@
   align-items: center;
   justify-content: center;
   width: auto;
-  height: 65px;
+  height: 60px;
   padding-left: 40px;
   padding-right: 40px;
-  border-radius: 0;
-  border: 1px solid #fff;
+  border-radius: 15px;
+  border: 1px solid #62c6ca;
   box-shadow: none;
-  background: transparent;
+  background-color: #62c6ca;
+  @extend %fontsIvymode;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: $c-black;
 
   &__wrapper {
     display: flex;
