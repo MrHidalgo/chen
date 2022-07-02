@@ -42,8 +42,11 @@
 	@if $filename == linkedin {
 		$char: "\E005";
 	}
-	@if $filename == twitter {
+	@if $filename == play {
 		$char: "\E006";
+	}
+	@if $filename == twitter {
+		$char: "\E007";
 	}
 
 	@return $char;
@@ -78,6 +81,10 @@
 }
 .icon-linkedin {
 	@include icon(linkedin);
+
+}
+.icon-play {
+	@include icon(play);
 
 }
 .icon-twitter {
