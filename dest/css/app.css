@@ -1458,3 +1458,51 @@ picture {
   font-weight: 300;
   color: #363636;
 }
+
+.do {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.do__desc {
+  width: 100%;
+  max-width: 674px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
+}
+.do__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.do__box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.do__box-head {
+  padding-bottom: 20px;
+}
+.do__box-head img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.do__box-body {
+  overflow: hidden;
+  position: relative;
+  padding: 25px 35px;
+  border-radius: 15px;
+  background-color: #fdf5f0;
+  background-image: url("../img/menu-pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: -100px -100px;
+  background-size: cover;
+}
+.do__box-desc {
+  padding-bottom: 60px;
+}
