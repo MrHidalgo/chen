@@ -3,6 +3,7 @@ import Common from "./common/common";
 import HeaderFixed from "./macros/headerFixed";
 import HamburgerMenu from "./macros/hamburgerMenu";
 import MenuToggle from "./macros/menuToggle";
+import HomeCarousel from "./macros/homeCarousel";
 // import ReviewsCarousel from "./macros/reviewsCarousel";
 // import Portfolio from "./macros/portfolio";
 // import Faq from "./macros/faq";
@@ -19,6 +20,7 @@ window.addEventListener('load', (ev) => {
   HeaderFixed.init();
   HamburgerMenu.init();
   MenuToggle.init();
+  HomeCarousel.init();
   // ReviewsCarousel.init();
   // Portfolio.init();
   // Faq.init();

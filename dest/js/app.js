@@ -109,7 +109,7 @@ var HeaderFixed = function () {
     var countScroll = $(window).scrollTop(),
         headerElement = $('.header');
 
-    if (countScroll > 10) {
+    if (countScroll > 5) {
       headerElement.addClass("is-fixed");
     } else {
       headerElement.removeClass("is-fixed");
@@ -122,6 +122,45 @@ var HeaderFixed = function () {
 }();
 
 /* harmony default export */ __webpack_exports__["default"] = (HeaderFixed);
+
+/***/ }),
+
+/***/ "./src/js/macros/homeCarousel.js":
+/*!***************************************!*\
+  !*** ./src/js/macros/homeCarousel.js ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var HomeCarousel = function () {
+  var init = function init() {
+    new Swiper('.home__carousel .swiper', {
+      loop: false,
+      speed: 1250,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      // pagination: {
+      //   el: '.reviews__carousel .swiper-pagination',
+      //   type: 'bullets',
+      //   clickable: true
+      // },
+      navigation: {
+        nextEl: '.home__nav--next',
+        prevEl: '.home__nav--prev'
+      }
+    });
+  };
+
+  return {
+    init: init
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (HomeCarousel);
 
 /***/ }),
 
@@ -212,6 +251,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _macros_headerFixed__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./macros/headerFixed */ "./src/js/macros/headerFixed.js");
 /* harmony import */ var _macros_hamburgerMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./macros/hamburgerMenu */ "./src/js/macros/hamburgerMenu.js");
 /* harmony import */ var _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./macros/menuToggle */ "./src/js/macros/menuToggle.js");
+/* harmony import */ var _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./macros/homeCarousel */ "./src/js/macros/homeCarousel.js");
+
 
 
 
@@ -227,7 +268,8 @@ window.addEventListener('load', function (ev) {
 
   _macros_headerFixed__WEBPACK_IMPORTED_MODULE_1__["default"].init();
   _macros_hamburgerMenu__WEBPACK_IMPORTED_MODULE_2__["default"].init();
-  _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__["default"].init(); // ReviewsCarousel.init();
+  _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__["default"].init();
+  _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__["default"].init(); // ReviewsCarousel.init();
   // Portfolio.init();
   // Faq.init();
 

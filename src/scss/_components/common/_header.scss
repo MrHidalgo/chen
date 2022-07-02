@@ -7,17 +7,18 @@
   left: 0;
   width: 100%;
   box-shadow: 0 5px 20px 0 rgba($c-black, 0);
-  background-color: transparent;
-  @include transition(box-shadow, background-color);
+  background-color: #fff;
+  @include transition(box-shadow);
 
   &.is-fixed {
     box-shadow: 0 5px 20px 0 rgba($c-black, 0.1);
-    background-color: #fff;
-    @include transition(box-shadow, background-color);
+    @include transition(box-shadow);
 
     .header {
       &__wrapper {
-
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include transition(padding-top, padding-bottom);
       }
     }
   }
@@ -30,6 +31,7 @@
     justify-content: space-between;
     padding-top: 35px;
     padding-bottom: 35px;
+    @include transition(padding-top, padding-bottom);
 
     &-middle {
       display: flex;
