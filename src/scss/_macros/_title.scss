@@ -1,7 +1,16 @@
 // TITLE :: START
 
 .c-title {
+  padding-bottom: 30px;
+  @extend %fontsIvymode;
+  font-weight: 300;
+  font-size: 60px;
+  line-height: 1;
+  color: #326b6e;
 
+  &--center {
+    text-align: center;
+  }
 }
 
 // TITLE :: END

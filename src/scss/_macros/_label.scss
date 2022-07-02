@@ -1,7 +1,15 @@
 // LABEL :: START
 
 .c-label {
+  @extend %fontsIvymode;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #5f7750;
 
+  &--center {
+    text-align: center;
+  }
 }
 
 // LABEL :: END

@@ -1,6 +1,14 @@
 // DESC :: START
 
 .c-desc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 36px;
+  color: #363636;
+
+  &--center {
+    text-align: center;
+  }
 
 }
 
