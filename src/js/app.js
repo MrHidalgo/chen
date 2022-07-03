@@ -4,6 +4,8 @@ import HeaderFixed from "./macros/headerFixed";
 import HamburgerMenu from "./macros/hamburgerMenu";
 import MenuToggle from "./macros/menuToggle";
 import HomeCarousel from "./macros/homeCarousel";
+import AboutToggle from "./macros/aboutToggle";
+
 // import ReviewsCarousel from "./macros/reviewsCarousel";
 // import Portfolio from "./macros/portfolio";
 // import Faq from "./macros/faq";
@@ -21,6 +23,8 @@ window.addEventListener('load', (ev) => {
   HamburgerMenu.init();
   MenuToggle.init();
   HomeCarousel.init();
+  AboutToggle.init();
+
   // ReviewsCarousel.init();
   // Portfolio.init();
   // Faq.init();

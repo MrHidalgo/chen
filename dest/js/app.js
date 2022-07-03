@@ -50,6 +50,37 @@ var Common = function () {
 
 /***/ }),
 
+/***/ "./src/js/macros/aboutToggle.js":
+/*!**************************************!*\
+  !*** ./src/js/macros/aboutToggle.js ***!
+  \**************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var AboutToggle = function () {
+  var init = function init() {
+    $('.about__nav a').on('click', function (ev) {
+      var el = $(ev.currentTarget),
+          elID = el.attr('data-id');
+
+      if (el.hasClass('is-active')) {} else {
+        $('.about__block').hide();
+        $('.about__block[data-block-id="' + elID + '"]').css('display', 'grid');
+        $('.about__nav a').removeClass('is-active');
+        el.addClass('is-active');
+      }
+    });
+  };
+
+  return {
+    init: init
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (AboutToggle);
+
+/***/ }),
+
 /***/ "./src/js/macros/hamburgerMenu.js":
 /*!****************************************!*\
   !*** ./src/js/macros/hamburgerMenu.js ***!
@@ -252,6 +283,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _macros_hamburgerMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./macros/hamburgerMenu */ "./src/js/macros/hamburgerMenu.js");
 /* harmony import */ var _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./macros/menuToggle */ "./src/js/macros/menuToggle.js");
 /* harmony import */ var _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./macros/homeCarousel */ "./src/js/macros/homeCarousel.js");
+/* harmony import */ var _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./macros/aboutToggle */ "./src/js/macros/aboutToggle.js");
+
 
 
 
@@ -269,7 +302,8 @@ window.addEventListener('load', function (ev) {
   _macros_headerFixed__WEBPACK_IMPORTED_MODULE_1__["default"].init();
   _macros_hamburgerMenu__WEBPACK_IMPORTED_MODULE_2__["default"].init();
   _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__["default"].init();
-  _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__["default"].init(); // ReviewsCarousel.init();
+  _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__["default"].init();
+  _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__["default"].init(); // ReviewsCarousel.init();
   // Portfolio.init();
   // Faq.init();
 
