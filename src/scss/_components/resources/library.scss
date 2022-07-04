@@ -1,0 +1,27 @@
+// SECTION :: START
+
+.library {
+  padding-bottom: 50px;
+
+  &__desc {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+    max-width: calc((536px * 2) + 16px);
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      padding-bottom: 60px;
+    }
+  }
+
+  .procedures__list {
+    li {
+      background-color: #b3dfde;
+    }
+  }
+}
+
+// SECTION :: END

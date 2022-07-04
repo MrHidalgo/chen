@@ -2345,3 +2345,22 @@ picture {
 .become__box-desc {
   padding-bottom: 60px;
 }
+
+.library {
+  padding-bottom: 50px;
+}
+.library__desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 1088px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.library__desc p {
+  padding-bottom: 60px;
+}
+.library .procedures__list li {
+  background-color: #b3dfde;
+}
