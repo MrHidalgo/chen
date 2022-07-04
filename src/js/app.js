@@ -5,6 +5,7 @@ import HamburgerMenu from "./macros/hamburgerMenu";
 import MenuToggle from "./macros/menuToggle";
 import HomeCarousel from "./macros/homeCarousel";
 import AboutToggle from "./macros/aboutToggle";
+import RealCarousel from "./macros/realCarousel";
 
 // import ReviewsCarousel from "./macros/reviewsCarousel";
 // import Portfolio from "./macros/portfolio";
@@ -24,6 +25,7 @@ window.addEventListener('load', (ev) => {
   MenuToggle.init();
   HomeCarousel.init();
   AboutToggle.init();
+  RealCarousel.init();
 
   // ReviewsCarousel.init();
   // Portfolio.init();

@@ -1,0 +1,150 @@
+// SECTION :: START
+
+.real {
+  padding-bottom: 50px;
+
+  &__desc {
+    width: 100%;
+    max-width: 674px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+  }
+
+  &__wrapper {
+    display: grid;
+    align-items: flex-start;
+    gap: 16px;
+
+    &-1 {
+      grid-template-columns: 536px calc(100% - 536px);
+      padding-bottom: 100px;
+    }
+    &-2 {
+      grid-template-columns: calc(100% - 536px) 536px;
+    }
+  }
+
+  &__box,
+  &__block {
+    border-radius: 15px;
+    background-color: #fdf5f0;
+  }
+
+  &__box {
+    padding: 30px 40px;
+    background-image: url('../img/menu-pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-position: -100px bottom;
+    background-size: cover;
+
+    &-desc {
+      padding-bottom: 60px;
+    }
+  }
+
+  &__block {
+    padding-left: 70px;
+    padding-right: 70px;
+
+    &-head,
+    &-footer {
+      display: flex;
+      align-items: center;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    &-head {
+      justify-content: space-between;
+    }
+
+    &-body {
+      .swiper {
+        max-width: 100%;
+
+        &-slide {
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+          }
+
+          a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 106px;
+            height: 106px;
+            border-radius: 50%;
+            background-color: #62c6ca;
+
+            .icon-font {
+              transform: translateX(5px);
+              color: #ffffff;
+              font-size: 40px;
+            }
+          }
+        }
+      }
+    }
+
+    &-footer {
+      justify-content: center;
+    }
+
+    &-title {
+      padding-bottom: 0;
+    }
+
+    &-nav {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      &.swiper-button-disabled {
+        pointer-events: none;
+        opacity: 0.55;
+      }
+
+      &--prev {
+        .icon-font {
+          transform: scaleX(-1);
+        }
+      }
+
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      .icon-font {
+        color: $c-white;
+        font-size: 22px;
+      }
+    }
+  }
+
+
+  &__pagination {
+    position: static;
+    width: auto;
+    @extend %fontsIvymode;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1;
+    color: #326b6e;
+
+    span {
+      @extend %fontsIvymode;
+      font-size: 40px;
+      font-weight: 300;
+      line-height: 1;
+      color: #326b6e;
+    }
+  }
+}
+
+// SECTION :: END

@@ -230,6 +230,62 @@ var MenuToggle = function () {
 
 /* harmony default export */ __webpack_exports__["default"] = (MenuToggle);
 
+/***/ }),
+
+/***/ "./src/js/macros/realCarousel.js":
+/*!***************************************!*\
+  !*** ./src/js/macros/realCarousel.js ***!
+  \***************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var RealCarousel = function () {
+  var init = function init() {
+    new Swiper('.real__block-1 .swiper', {
+      loop: false,
+      speed: 1250,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: '.real__block-1 .real__pagination',
+        type: 'fraction',
+        clickable: true,
+        renderFraction: function renderFraction(currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+        }
+      },
+      navigation: {
+        nextEl: '.real__block-1 .real__block-nav--next',
+        prevEl: '.real__block-1 .real__block-nav--prev'
+      }
+    });
+    new Swiper('.real__block-2 .swiper', {
+      loop: false,
+      speed: 1250,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      pagination: {
+        el: '.real__block-2 .real__pagination',
+        type: 'fraction',
+        clickable: true,
+        renderFraction: function renderFraction(currentClass, totalClass) {
+          return '<span class="' + currentClass + '"></span>' + ' of ' + '<span class="' + totalClass + '"></span>';
+        }
+      },
+      navigation: {
+        nextEl: '.real__block-2 .real__block-nav--next',
+        prevEl: '.real__block-2 .real__block-nav--prev'
+      }
+    });
+  };
+
+  return {
+    init: init
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (RealCarousel);
+
 /***/ })
 
 /******/ 	});
@@ -284,6 +340,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./macros/menuToggle */ "./src/js/macros/menuToggle.js");
 /* harmony import */ var _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./macros/homeCarousel */ "./src/js/macros/homeCarousel.js");
 /* harmony import */ var _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./macros/aboutToggle */ "./src/js/macros/aboutToggle.js");
+/* harmony import */ var _macros_realCarousel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./macros/realCarousel */ "./src/js/macros/realCarousel.js");
+
 
 
 
@@ -303,7 +361,8 @@ window.addEventListener('load', function (ev) {
   _macros_hamburgerMenu__WEBPACK_IMPORTED_MODULE_2__["default"].init();
   _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__["default"].init();
   _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__["default"].init();
-  _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__["default"].init(); // ReviewsCarousel.init();
+  _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__["default"].init();
+  _macros_realCarousel__WEBPACK_IMPORTED_MODULE_6__["default"].init(); // ReviewsCarousel.init();
   // Portfolio.init();
   // Faq.init();
 

@@ -8,3 +8,10 @@ extends shared/_layout
 block content
   main.main(class!= pageClassName)
 
+    +mainSection('stories', 'about', 'Patient Stories', ['Home', '•', 'Patient Stories'])
+
+    include components/stories/real
+    include components/stories/become
+
+    include components/common/info
+

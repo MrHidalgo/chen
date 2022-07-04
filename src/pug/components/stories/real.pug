@@ -1,0 +1,64 @@
+// SECTION :: START
+
+section#real.real
+  .c-grid
+
+    p.real__label.c-label.c-label--center Our Success Stories
+    h2.real__title.c-title.c-title--center Real Patients. Real Stories.
+    p.real__desc.c-desc.c-desc--center Many of our patients have volunteered to speak with other women who may have questions about what it is like to go through restorative breast surgery. If you would like to speak with someone who has already gone through the process, please contact us and we will find a “buddy” for you.
+
+    .real__wrapper.real__wrapper-1
+      div
+
+        .real__box
+          p.real__box-title.c-title.c-title--small Patient Stories
+          p.real__box-desc.c-desc Many of our patients have volunteered to speak with other women who may have questions about what it is like to go through restorative breast surgery.
+          a.real__box-link.c-link(href="#") + READ PATIENT STORIES
+
+      div
+
+        .real__block.real__block-1
+          .real__block-head
+            h3.real__block-title.c-title.c-title--small
+            .real__pagination
+          .real__block-body
+            .swiper
+              .swiper-wrapper
+                each val, idx in [1,2,3,4,5]
+                  .swiper-slide
+                    img(src="img/img-real-stories.png" srcset="img/img-real-stories@2x.png 2x" alt="")
+          .real__block-footer
+            .c-btn__wrapper.c-btn__wrapper--center
+              a.real__block-nav.real__block-nav--prev.c-btn(href="#")
+                i.icon-font.icon-corner
+              a.real__block-nav.real__block-nav--next.c-btn(href="#")
+                i.icon-font.icon-corner
+
+    .real__wrapper.real__wrapper-2
+      div
+
+        .real__block.real__block-2
+          .real__block-head
+            h3.real__block-title.c-title.c-title--small Erica’s Story
+            .real__pagination
+          .real__block-body
+            .swiper
+              .swiper-wrapper
+                each val, idx in [1,2,3,4]
+                  .swiper-slide
+                    img(src="img/img-real-video-pattern.jpg" srcset="img/img-real-video-pattern@2x.jpg 2x" alt="")
+                    a(href="#")
+                      i.icon-font.icon-play
+          .real__block-footer
+            .c-btn__wrapper.c-btn__wrapper--center
+              a.real__block-nav.real__block-nav--prev.c-btn(href="#")
+                i.icon-font.icon-corner
+              a.real__block-nav.real__block-nav--next.c-btn(href="#")
+                i.icon-font.icon-corner
+      div
+
+        .real__box
+          p.real__box-title.c-title.c-title--small Patient Story Videos
+          p.real__box-desc.c-desc Many of our patients have volunteered to speak with other women who may have questions about what it is like to go through restorative breast surgery.
+
+// SECTION :: END

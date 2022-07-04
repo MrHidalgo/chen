@@ -21,7 +21,7 @@ body {
   font-family: muli, sans-serif;
 }
 
-.procedures__list li, .info__block-address h3,
+.real__pagination span, .real__pagination, .procedures__list li, .info__block-address h3,
 .info__block-address p,
 .info__block-address span, .menu__link, .menu__btn, .c-btn, .c-subtitle, .c-label, .c-title {
   font-family: ivymode, sans-serif;
@@ -525,6 +525,7 @@ picture {
   letter-spacing: 0.1em;
   line-height: 36px;
   color: #326b6e;
+  text-transform: uppercase;
 }
 
 .header {
@@ -2158,5 +2159,189 @@ picture {
   max-width: 1090px;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 60px;
+}
+
+.real {
+  padding-bottom: 50px;
+}
+.real__desc {
+  width: 100%;
+  max-width: 674px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 100px;
+}
+.real__wrapper {
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 16px;
+}
+.real__wrapper-1 {
+  grid-template-columns: 536px calc(100% - 536px);
+  padding-bottom: 100px;
+}
+.real__wrapper-2 {
+  grid-template-columns: calc(100% - 536px) 536px;
+}
+.real__box, .real__block {
+  border-radius: 15px;
+  background-color: #fdf5f0;
+}
+.real__box {
+  padding: 30px 40px;
+  background-image: url("../img/menu-pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: -100px bottom;
+  background-size: cover;
+}
+.real__box-desc {
+  padding-bottom: 60px;
+}
+.real__block {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.real__block-head, .real__block-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.real__block-head {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.real__block-body .swiper {
+  max-width: 100%;
+}
+.real__block-body .swiper-slide img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.real__block-body .swiper-slide a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+  background-color: #62c6ca;
+}
+.real__block-body .swiper-slide a .icon-font {
+  -webkit-transform: translateX(5px);
+      -ms-transform: translateX(5px);
+          transform: translateX(5px);
+  color: #ffffff;
+  font-size: 40px;
+}
+.real__block-footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.real__block-title {
+  padding-bottom: 0;
+}
+.real__block-nav {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.real__block-nav.swiper-button-disabled {
+  pointer-events: none;
+  opacity: 0.55;
+}
+.real__block-nav--prev .icon-font {
+  -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+.real__block-nav:not(:last-child) {
+  margin-right: 10px;
+}
+.real__block-nav .icon-font {
+  color: #fff;
+  font-size: 22px;
+}
+.real__pagination {
+  position: static;
+  width: auto;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  color: #326b6e;
+}
+.real__pagination span {
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1;
+  color: #326b6e;
+}
+
+.become {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.become__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.become__wrapper > div {
+  position: relative;
+}
+.become__wrapper > div img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.become__wrapper > div img:nth-of-type(1) {
+  z-index: 2;
+  top: 0;
+  right: 0;
+}
+.become__wrapper > div img:nth-of-type(2) {
+  z-index: 0;
+  left: 0;
+  bottom: 0;
+}
+.become__box {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  padding: 30px 55px;
+  border-radius: 15px;
+  background-color: #fdf5f0;
+  background-image: url("../img/menu-pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 100px center;
+  background-size: cover;
+}
+.become__box-subtitle {
+  width: 100%;
+  max-width: 75%;
+  padding-bottom: 30px;
+}
+.become__box-desc {
   padding-bottom: 60px;
 }

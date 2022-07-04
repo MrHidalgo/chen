@@ -1,0 +1,58 @@
+// SECTION :: START
+
+.become {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+
+    > div {
+      position: relative;
+
+      img {
+        position: absolute;
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        &:nth-of-type(1) {
+          z-index: 2;
+          top: 0;
+          right: 0;
+        }
+        &:nth-of-type(2) {
+          z-index: 0;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__box {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 30px 55px;
+    border-radius: 15px;
+    background-color: #fdf5f0;
+    background-image: url('../img/menu-pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-position: 100px center;
+    background-size: cover;
+
+    &-subtitle {
+      width: 100%;
+      max-width: 75%;
+      padding-bottom: 30px;
+    }
+
+    &-desc {
+      padding-bottom: 60px;
+    }
+  }
+}
+
+// SECTION :: END
