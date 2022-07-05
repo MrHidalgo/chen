@@ -9,6 +9,12 @@
   line-height: 36px;
   color: #326b6e;
   text-transform: uppercase;
+  @include adaptive(1365) {
+    font-size: 15px;
+  }
+  @include adaptive(767) {
+    font-size: 12px;
+  }
 }
 
 // LINK :: END

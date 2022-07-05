@@ -6,6 +6,9 @@
   font-size: 18px;
   line-height: 1.5;
   color: #5f7750;
+  @include adaptive(767) {
+    font-size: 14px;
+  }
 
   &--center {
     text-align: center;

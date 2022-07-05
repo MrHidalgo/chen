@@ -7,15 +7,36 @@
   font-size: 60px;
   line-height: 1;
   color: #326b6e;
+  @include adaptive(1439) {
+    font-size: 50px;
+  }
+  @include adaptive(1023) {
+    font-size: 40px;
+  }
+  @include adaptive(767) {
+    font-size: 30px;
+  }
 
   &--extrasmall {
     font-size: 30px;
   }
   &--small {
     font-size: 40px;
+    @include adaptive(767) {
+      font-size: 30px;
+    }
   }
   &--big {
     font-size: 70px;
+    @include adaptive(1439) {
+      font-size: 60px;
+    }
+    @include adaptive(1023) {
+      font-size: 50px;
+    }
+    @include adaptive(767) {
+      font-size: 40px;
+    }
   }
 
   &--center {

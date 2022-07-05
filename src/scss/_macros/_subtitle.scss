@@ -8,6 +8,10 @@
   font-size: 30px;
   line-height: 55px;
   color: #5f7750;
+  @include adaptive(767) {
+    font-size: 25px;
+    line-height: 45px;
+  }
 
   &--center {
     text-align: center;
