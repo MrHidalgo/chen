@@ -1,19 +1,40 @@
 // SECTION :: START
 
 .home {
+  @include adaptive(767) {
+    padding-bottom: 50px;
+  }
+
   &__wrapper {
     &-2 {
       transform: translateY(-135px);
+      @include adaptive(767) {
+        transform: translateY(-50px);
+      }
     }
 
     &-3 {
       transform: translateY(-85px);
+      @include adaptive(767) {
+        transform: translateY(0);
+        padding-top: 25px;
+      }
     }
 
     &-2 {
       display: grid;
       align-items: center;
       grid-template-columns: 140px calc(100% - 280px) 140px;
+      @include adaptive(1023) {
+        grid-template-columns: 100px calc(100% - 200px) 100px;
+      }
+      @include adaptive(767) {
+        display: block;
+        grid-template-columns: unset;
+        width: calc(100% - 20px);
+        margin-left: auto;
+        margin-right: auto;
+      }
 
       > div {
         &:nth-of-type(1),
@@ -21,6 +42,9 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          @include adaptive(767) {
+            display: none;
+          }
         }
       }
     }
@@ -109,6 +133,16 @@
     grid-template-columns: 1fr 1fr;
     gap: 100px;
     padding: 55px;
+    @include adaptive(1365) {
+      gap: 50px;
+      padding: 40px;
+    }
+    @include adaptive(1023) {
+      grid-template-columns: 1fr;
+    }
+    @include adaptive(767) {
+      padding: 30px 20px;
+    }
 
     > div {
       position: relative;
@@ -118,6 +152,14 @@
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-end;
+        @include adaptive(1023) {
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+        @include adaptive(767) {
+          display: none;
+        }
       }
 
       img {
@@ -125,6 +167,9 @@
         display: block;
         max-width: 100%;
         height: auto;
+        @include adaptive(1023) {
+          position: static;
+        }
 
         &:nth-of-type(1) {
           bottom: -20px;
@@ -143,6 +188,18 @@
       line-height: 22px;
       color: #87809e;
       text-transform: uppercase;
+      @include adaptive(1023) {
+        font-size: 16px;
+      }
+      @include adaptive(767) {
+        text-align: center;
+      }
+    }
+
+    &-title {
+      @include adaptive(767) {
+        text-align: center;
+      }
     }
 
     &-desc {
@@ -153,12 +210,50 @@
       line-height: 22px;
       color: #87809e;
       text-transform: uppercase;
+      @include adaptive(1023) {
+        font-size: 16px;
+      }
+      @include adaptive(767) {
+        text-align: center;
+      }
     }
 
     &-tag {
       font-size: 18px;
       line-height: 22px;
       color: #87809e;
+      @include adaptive(1365) {
+        font-size: 14px;
+      }
+      @include adaptive(1279) {
+        display: none;
+      }
+    }
+  }
+
+  &__pagination {
+    position: static;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-15px);
+    @include adaptive(767) {
+      display: flex;
+    }
+
+    .swiper-pagination {
+      &-bullet {
+        opacity: 1;
+        width: 10px;
+        height: 10px;
+        background-color: #fdf5f0;
+        @include transition(background-color);
+
+        &-active {
+          background-color: #b3dfde;
+          @include transition(background-color);
+        }
+      }
     }
   }
 }

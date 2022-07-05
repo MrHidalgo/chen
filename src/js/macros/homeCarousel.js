@@ -11,11 +11,11 @@ const HomeCarousel = (function() {
       fadeEffect: {
         crossFade: true
       },
-      // pagination: {
-      //   el: '.reviews__carousel .swiper-pagination',
-      //   type: 'bullets',
-      //   clickable: true
-      // },
+      pagination: {
+        el: '.home__pagination',
+        type: 'bullets',
+        clickable: true
+      },
       navigation: {
         nextEl: '.home__nav--next',
         prevEl: '.home__nav--prev',
