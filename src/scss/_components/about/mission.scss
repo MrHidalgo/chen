@@ -9,6 +9,9 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 115px;
+    @include adaptive(1365) {
+      padding-bottom: 60px;
+    }
   }
 
   &__wrapper {
@@ -17,6 +20,9 @@
       grid-template-columns: 1fr 1fr;
       gap: 16px;
       padding-bottom: 16px;
+      @include adaptive(767) {
+        grid-template-columns: 1fr;
+      }
 
       > div {
         &:nth-of-type(1) {
@@ -31,6 +37,12 @@
       display: grid;
       grid-template-columns: 1fr 647px;
       gap: 16px;
+      @include adaptive(1023) {
+        grid-template-columns: 1fr 1fr;
+      }
+      @include adaptive(767) {
+        grid-template-columns: 1fr;
+      }
     }
 
     img {
@@ -56,6 +68,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include adaptive(1365) {
+      padding: 40px;
+    }
+    @include adaptive(767) {
+      padding: 30px 20px;
+    }
 
     &-1 {
       background-position: 100px center;
@@ -69,6 +87,9 @@
 
     &-desc {
       padding-bottom: 60px;
+      @include adaptive(767) {
+        padding-bottom: 30px;
+      }
     }
   }
 }

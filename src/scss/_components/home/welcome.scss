@@ -11,6 +11,9 @@
 
   &.welcome--about {
     padding-bottom: 250px;
+    @include adaptive(767) {
+      padding-bottom: 50px;
+    }
 
     .welcome {
       &__wrapper {

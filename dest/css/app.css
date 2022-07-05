@@ -1430,18 +1430,45 @@ picture {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .basic {
+    padding-bottom: 50px;
+  }
+}
 .basic__visual {
   display: block;
   max-width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 15px;
+}
+@media screen and (max-width: 767px) {
+  .basic__visual {
+    position: relative;
+    height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
 }
 .basic__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-left: 140px;
+}
+@media screen and (max-width: 1279px) {
+  .basic__box {
+    padding-left: 75px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .basic__box {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 .basic__box > div {
   overflow: hidden;
@@ -1456,6 +1483,14 @@ picture {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (max-width: 1023px) {
+  .basic__box > div {
+    max-width: 100%;
+    -webkit-transform: translateY(-25%);
+        -ms-transform: translateY(-25%);
+            transform: translateY(-25%);
+  }
 }
 .basic__box > div:after {
   content: "";
@@ -1484,6 +1519,12 @@ picture {
   min-height: 214px;
   padding: 25px 40px;
 }
+@media screen and (max-width: 767px) {
+  .basic__box-content {
+    min-height: 175px;
+    padding: 30px 20px;
+  }
+}
 .basic__title {
   padding-bottom: 10px;
   text-transform: capitalize;
@@ -1508,6 +1549,12 @@ picture {
   text-align: left;
   color: #326b6e;
   text-transform: capitalize;
+}
+@media screen and (max-width: 767px) {
+  .basic__breadcrumbs a,
+.basic__breadcrumbs p {
+    font-size: 14px;
+  }
 }
 .basic__breadcrumbs span {
   display: -webkit-box;
@@ -2347,6 +2394,11 @@ picture {
 .welcome.welcome--about {
   padding-bottom: 250px;
 }
+@media screen and (max-width: 767px) {
+  .welcome.welcome--about {
+    padding-bottom: 50px;
+  }
+}
 .welcome.welcome--about .welcome__wrapper > div {
   max-width: 536px;
 }
@@ -2569,11 +2621,21 @@ picture {
   margin-right: auto;
   padding-bottom: 115px;
 }
+@media screen and (max-width: 1365px) {
+  .mission__subtitle {
+    padding-bottom: 60px;
+  }
+}
 .mission__wrapper-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   padding-bottom: 16px;
+}
+@media screen and (max-width: 767px) {
+  .mission__wrapper-1 {
+    grid-template-columns: 1fr;
+  }
 }
 .mission__wrapper-1 > div:nth-of-type(1) {
   display: grid;
@@ -2584,6 +2646,16 @@ picture {
   display: grid;
   grid-template-columns: 1fr 647px;
   gap: 16px;
+}
+@media screen and (max-width: 1023px) {
+  .mission__wrapper-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mission__wrapper-2 {
+    grid-template-columns: 1fr;
+  }
 }
 .mission__wrapper img {
   display: block;
@@ -2609,6 +2681,16 @@ picture {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 1365px) {
+  .mission__box {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mission__box {
+    padding: 30px 20px;
+  }
+}
 .mission__box-1 {
   background-position: 100px center;
 }
@@ -2620,6 +2702,11 @@ picture {
 }
 .mission__box-desc {
   padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .mission__box-desc {
+    padding-bottom: 30px;
+  }
 }
 
 .biography {
