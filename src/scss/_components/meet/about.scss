@@ -9,11 +9,23 @@
     align-items: flex-start;
     grid-template-columns: 536px 1fr;
     gap: 16px;
+    @include adaptive(1279) {
+      grid-template-columns: 300px 1fr;
+    }
+    @include adaptive(1023) {
+      grid-template-columns: 1fr;
+    }
 
     > div {
       padding: 55px;
       border-radius: 15px;
       background-color: #fdf5f0;
+      @include adaptive(1365) {
+        padding: 40px;
+      }
+      @include adaptive(767) {
+        padding: 30px 20px;
+      }
 
       &:nth-of-type(1) {
         position: sticky;
@@ -23,6 +35,9 @@
         background-repeat: no-repeat;
         background-position: -200px 100px;
         background-size: cover;
+        @include adaptive(1023) {
+          position: static;
+        }
       }
     }
   }
@@ -59,6 +74,10 @@
     display: none;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    @include adaptive(767) {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
 
     &.is-open {
       display: grid;
@@ -68,6 +87,9 @@
       display: flex;
       flex-direction: column;
       padding-bottom: 60px;
+      @include adaptive(767) {
+        padding-bottom: 30px;
+      }
 
       li {
         &:not(:last-of-type) {
