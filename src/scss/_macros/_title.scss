@@ -22,6 +22,9 @@
   }
   &--small {
     font-size: 40px;
+    @include adaptive(1279) {
+      font-size: 35px;
+    }
     @include adaptive(767) {
       font-size: 30px;
     }

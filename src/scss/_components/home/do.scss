@@ -10,6 +10,9 @@
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 60px;
+    @include adaptive(767) {
+      padding-bottom: 50px;
+    }
   }
 
   &__box {
@@ -20,6 +23,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 16px;
+      @include adaptive(1023) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include adaptive(1023) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
 
     &-head {
@@ -29,12 +38,22 @@
         display: block;
         max-width: 100%;
         height: auto;
+        @include adaptive(767) {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 15px;
+        }
       }
     }
 
     &-body {
       overflow: hidden;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
       padding: 25px 35px;
       border-radius: 15px;
       background-color: #fdf5f0;
@@ -42,10 +61,26 @@
       background-repeat: no-repeat;
       background-position: -100px -100px;
       background-size: cover;
+      @include adaptive(767) {
+        padding: 30px 20px;
+      }
+    }
+
+    &-title {
+      @include adaptive(1439) {
+        min-height: 110px;
+      }
+      @include adaptive(767) {
+        min-height: unset;
+      }
     }
 
     &-desc {
+      flex: 1;
       padding-bottom: 60px;
+      @include adaptive(767) {
+        padding-bottom: 30px;
+      }
     }
   }
 }
