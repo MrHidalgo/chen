@@ -9,6 +9,7 @@
   line-height: 55px;
   color: #5f7750;
   @include adaptive(767) {
+    padding-bottom: 30px;
     font-size: 25px;
     line-height: 45px;
   }

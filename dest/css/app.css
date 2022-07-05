@@ -537,6 +537,7 @@ picture {
 }
 @media screen and (max-width: 767px) {
   .c-subtitle {
+    padding-bottom: 30px;
     font-size: 25px;
     line-height: 45px;
   }
@@ -1521,10 +1522,31 @@ picture {
   padding-bottom: 50px;
   padding-top: 50px;
 }
+@media screen and (max-width: 1023px) {
+  .before-after {
+    padding-bottom: 0;
+  }
+}
 .before-after__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 150px;
+}
+@media screen and (max-width: 1439px) {
+  .before-after__wrapper {
+    gap: 125px;
+  }
+}
+@media screen and (max-width: 1365px) {
+  .before-after__wrapper {
+    gap: 100px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .before-after__wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
 }
 .before-after__wrapper > div {
   position: relative;
@@ -1543,13 +1565,29 @@ picture {
   height: auto;
   border-radius: 15px;
 }
+@media screen and (max-width: 767px) {
+  .before-after__wrapper > div img {
+    max-width: 60%;
+  }
+}
 .before-after__wrapper > div img:nth-of-type(1) {
   position: absolute;
   top: 0;
   right: 0;
 }
+@media screen and (max-width: 1023px) {
+  .before-after__wrapper > div img:nth-of-type(2) {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+}
 .before-after__desc {
   padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .before-after__desc {
+    padding-bottom: 30px;
+  }
 }
 
 .stories {
