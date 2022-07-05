@@ -7,6 +7,13 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 535px 1fr;
+    gap: 16px;
+    @include adaptive(1279) {
+      grid-template-columns: 300px 1fr;
+    }
+    @include adaptive(1023) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__box {
@@ -17,6 +24,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include adaptive(1365) {
+      padding: 40px;
+    }
+    @include adaptive(767) {
+      padding: 30px 20px;
+    }
 
     &-1 {
       background-position: -50px center;
@@ -39,6 +52,10 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
+      @include adaptive(767) {
+        grid-template-columns: 1fr;
+        padding-top: 34px;
+      }
     }
   }
 }

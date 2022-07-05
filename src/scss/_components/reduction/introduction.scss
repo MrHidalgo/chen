@@ -7,6 +7,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    @include adaptive(1279) {
+      grid-template-columns: 1fr;
+    }
 
     > div {
       display: grid;
@@ -31,15 +34,28 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @include adaptive(1365) {
+      padding: 40px;
+    }
+    @include adaptive(767) {
+      padding: 30px 20px;
+    }
 
     &-desc {
       &:not(:last-of-type) {
         padding-bottom: 60px;
+        @include adaptive(767) {
+          padding-bottom: 30px;
+        }
       }
     }
   }
 
   &__block {
+    @include adaptive(1279) {
+      display: none;
+    }
+
     img {
       position: relative;
       width: 100%;

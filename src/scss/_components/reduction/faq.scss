@@ -88,6 +88,9 @@
       line-height: 1;
       color: #326b6e;
       text-transform: capitalize;
+      @include adaptive(767) {
+        font-size: 25px;
+      }
     }
 
     &-content {
