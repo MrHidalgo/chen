@@ -5,6 +5,12 @@
   line-height: 36px;
   text-align: right;
   color: #363636;
+  @include adaptive(1279) {
+    text-align: center;
+  }
+  @include adaptive(767) {
+    font-size: 14px;
+  }
 }
 
 // COMMON :: END
