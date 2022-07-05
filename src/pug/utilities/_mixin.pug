@@ -7,13 +7,13 @@ include ./_mixin/_modal
 mixin mainSection(classMod, img, title, breadcrumbsArr)
   section#basic.basic(class!= "basic--" + classMod)
     .c-grid
-      img.basic__visual(src="img/img-basic-bg--" + img + ".jpg" srcset="img/img-basic-bg--" + img + "@2x.jpg 2x" alt="")
+      img.basic__visual(src="img/img-basic-bg--" + img + ".jpg" srcset="img/img-basic-bg--" + img + "@2x.jpg 2x" alt="" data-aos="fade-up")
 
-      .basic__box
+      .basic__box(data-aos="fade-up")
         div
           .basic__box-content
-            h1.basic__title.c-title!= title
-            .basic__breadcrumbs
+            h1.basic__title.c-title(data-aos="fade-up")!= title
+            .basic__breadcrumbs(data-aos="fade-up")
               each val, idx in breadcrumbsArr
                 if(idx === breadcrumbsArr.length - 1)
                   p!= val
