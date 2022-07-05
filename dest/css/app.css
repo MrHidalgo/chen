@@ -3527,6 +3527,11 @@ picture {
   grid-template-columns: 536px 1fr;
   gap: 16px;
 }
+@media screen and (max-width: 1023px) {
+  .address__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .address__box {
   padding: 50px;
   border-radius: 15px;
@@ -3535,6 +3540,16 @@ picture {
   background-repeat: no-repeat;
   background-position: center -100px;
   background-size: cover;
+}
+@media screen and (max-width: 1365px) {
+  .address__box {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .address__box {
+    padding: 30px 20px;
+  }
 }
 .address__list {
   display: -webkit-box;
@@ -3547,6 +3562,11 @@ picture {
   width: 100%;
   max-width: 65%;
 }
+@media screen and (max-width: 767px) {
+  .address__list {
+    max-width: 100%;
+  }
+}
 .address__list li {
   padding-bottom: 30px;
 }
@@ -3554,6 +3574,13 @@ picture {
 .address__list li span {
   font-size: 30px;
   line-height: 40px;
+}
+@media screen and (max-width: 767px) {
+  .address__list li p,
+.address__list li span {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 .address__list li p {
   font-weight: normal;
@@ -3563,7 +3590,7 @@ picture {
   font-weight: 300;
   color: #363636;
 }
-.address__map img {
+.address__map {
   display: block;
   max-width: 100%;
   height: auto;
