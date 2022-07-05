@@ -1485,6 +1485,11 @@ picture {
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
+@media screen and (max-width: 767px) {
+  .meet__wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 .meet__wrapper > div:nth-of-type(2) {
   display: grid;
   grid-template-columns: 1fr;
@@ -1501,11 +1506,36 @@ picture {
   background-position: calc(100% + 100px) -250px;
   background-size: cover;
 }
+@media screen and (max-width: 1439px) {
+  .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(1) {
+    padding: 75px 55px;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(1) {
+    padding: 60px 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(1) {
+    padding: 30px 20px;
+  }
+}
 .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(2) {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 60px;
+}
+@media screen and (max-width: 1365px) {
+  .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(2) {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(2) {
+    padding: 30px 20px;
+  }
 }
 .meet__wrapper > div:nth-of-type(2) > div:nth-of-type(2) img {
   display: block;
@@ -1521,6 +1551,11 @@ picture {
 }
 .meet__desc {
   padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .meet__desc {
+    padding-bottom: 30px;
+  }
 }
 
 .before-after {
