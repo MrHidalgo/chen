@@ -1566,6 +1566,13 @@ picture {
   height: 100%;
   padding-top: 150px;
 }
+@media screen and (max-width: 1023px) {
+  .stories__bg {
+    position: static;
+    padding-top: 0;
+    margin-bottom: 16px;
+  }
+}
 .stories__bg img {
   display: block;
   max-width: 100%;
@@ -1579,9 +1586,20 @@ picture {
 .stories__wrapper-1 {
   padding-bottom: 175px;
 }
+@media screen and (max-width: 1023px) {
+  .stories__wrapper-1 {
+    padding-bottom: 16px;
+  }
+}
 .stories__wrapper-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media screen and (max-width: 1023px) {
+  .stories__wrapper-2 {
+    grid-template-columns: 1fr;
+  }
 }
 .stories__wrapper-2 > div > * {
   margin-left: auto;
@@ -1601,11 +1619,31 @@ picture {
 .stories__box-1 .stories__box-content {
   padding: 60px;
 }
+@media screen and (max-width: 1365px) {
+  .stories__box-1 .stories__box-content {
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .stories__box-1 .stories__box-content {
+    padding: 30px 20px;
+  }
+}
 .stories__box-2 {
   max-width: 536px;
 }
+@media screen and (max-width: 1023px) {
+  .stories__box-2 {
+    max-width: 100%;
+  }
+}
 .stories__box-2 .stories__box-content {
   padding: 30px;
+}
+@media screen and (max-width: 767px) {
+  .stories__box-2 .stories__box-content {
+    padding: 30px 20px;
+  }
 }
 .stories__box__bg {
   z-index: 0;
@@ -1622,6 +1660,11 @@ picture {
 .stories__box-desc {
   padding-bottom: 60px;
 }
+@media screen and (max-width: 767px) {
+  .stories__box-desc {
+    padding-bottom: 30px;
+  }
+}
 .stories__box-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1632,6 +1675,17 @@ picture {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .stories__box-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 .stories__video {
   overflow: hidden;
