@@ -1,0 +1,46 @@
+// SECTION :: START
+
+.benefits {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 535px 1fr;
+  }
+
+  &__box {
+    padding: 35px 40px;
+    border-radius: 15px;
+    background-color: #fdf5f0;
+    background-image: url('../img/menu-pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &-1 {
+      background-position: -50px center;
+    }
+    &-2 {
+      background-position: -100px top;
+    }
+    &-3 {
+      background-position: 50px bottom;
+    }
+    &-4 {
+      background-position: 100px center;
+    }
+
+    .c-subtitle {
+      padding-bottom: 0;
+    }
+
+    &-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+  }
+}
+
+// SECTION :: END

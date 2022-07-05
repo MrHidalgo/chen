@@ -6,10 +6,7 @@ import MenuToggle from "./macros/menuToggle";
 import HomeCarousel from "./macros/homeCarousel";
 import AboutToggle from "./macros/aboutToggle";
 import RealCarousel from "./macros/realCarousel";
-
-// import ReviewsCarousel from "./macros/reviewsCarousel";
-// import Portfolio from "./macros/portfolio";
-// import Faq from "./macros/faq";
+import Faq from "./macros/faq";
 
 
 // EVENT LISTENER - LOAD
@@ -26,10 +23,7 @@ window.addEventListener('load', (ev) => {
   HomeCarousel.init();
   AboutToggle.init();
   RealCarousel.init();
-
-  // ReviewsCarousel.init();
-  // Portfolio.init();
-  // Faq.init();
+  Faq.init();
 
   /* SCROLL WOW ANIMATION */
   AOS.init({

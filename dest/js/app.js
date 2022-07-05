@@ -81,6 +81,35 @@ var AboutToggle = function () {
 
 /***/ }),
 
+/***/ "./src/js/macros/faq.js":
+/*!******************************!*\
+  !*** ./src/js/macros/faq.js ***!
+  \******************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+var Faq = function () {
+  var init = function init() {
+    $('.faq__block').on('click', function (ev) {
+      if ($(ev.currentTarget).hasClass('is-active')) {
+        $(ev.currentTarget).removeClass('is-active');
+        $(ev.currentTarget).siblings('.faq__block-content').slideUp(350);
+      } else {
+        $(ev.currentTarget).addClass('is-active');
+        $(ev.currentTarget).siblings('.faq__block-content').slideDown(350);
+      }
+    });
+  };
+
+  return {
+    init: init
+  };
+}();
+
+/* harmony default export */ __webpack_exports__["default"] = (Faq);
+
+/***/ }),
+
 /***/ "./src/js/macros/hamburgerMenu.js":
 /*!****************************************!*\
   !*** ./src/js/macros/hamburgerMenu.js ***!
@@ -341,16 +370,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./macros/homeCarousel */ "./src/js/macros/homeCarousel.js");
 /* harmony import */ var _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./macros/aboutToggle */ "./src/js/macros/aboutToggle.js");
 /* harmony import */ var _macros_realCarousel__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./macros/realCarousel */ "./src/js/macros/realCarousel.js");
+/* harmony import */ var _macros_faq__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./macros/faq */ "./src/js/macros/faq.js");
 
 
 
 
 
 
- // import ReviewsCarousel from "./macros/reviewsCarousel";
-// import Portfolio from "./macros/portfolio";
-// import Faq from "./macros/faq";
-// EVENT LISTENER - LOAD
+
+ // EVENT LISTENER - LOAD
 // ========================================
 
 window.addEventListener('load', function (ev) {
@@ -362,10 +390,8 @@ window.addEventListener('load', function (ev) {
   _macros_menuToggle__WEBPACK_IMPORTED_MODULE_3__["default"].init();
   _macros_homeCarousel__WEBPACK_IMPORTED_MODULE_4__["default"].init();
   _macros_aboutToggle__WEBPACK_IMPORTED_MODULE_5__["default"].init();
-  _macros_realCarousel__WEBPACK_IMPORTED_MODULE_6__["default"].init(); // ReviewsCarousel.init();
-  // Portfolio.init();
-  // Faq.init();
-
+  _macros_realCarousel__WEBPACK_IMPORTED_MODULE_6__["default"].init();
+  _macros_faq__WEBPACK_IMPORTED_MODULE_7__["default"].init();
   /* SCROLL WOW ANIMATION */
 
   AOS.init({

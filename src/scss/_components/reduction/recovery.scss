@@ -1,0 +1,43 @@
+// SECTION :: START
+
+.recovery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    &-1 {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 300px 1fr;
+      gap: 16px;
+      padding-bottom: 100px;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 16px
+    }
+  }
+
+  &__box {
+    min-height: 100%;
+    padding: 35px 40px;
+    border-radius: 15px;
+    background-color: #fdf5f0;
+    background-image: url('../img/menu-pattern-bg.svg');
+    background-position: -200px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+// SECTION :: END

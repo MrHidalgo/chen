@@ -1,0 +1,60 @@
+// SECTION :: START
+
+.address {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 536px 1fr;
+    gap: 16px;
+  }
+
+  &__box {
+    padding: 50px;
+    border-radius: 15px;
+    background-color: #fdf5f0;
+    background-image: url('../img/menu-pattern-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center -100px;
+    background-size: cover;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 65%;
+
+    li {
+      padding-bottom: 30px;
+
+      p,
+      span {
+        @extend %fontsIvymode;
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      p {
+        font-weight: normal;
+        color: #326b6e;
+      }
+
+      span {
+        font-weight: 300;
+        color: #363636;
+      }
+    }
+  }
+
+  &__map {
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+// SECTION :: END
