@@ -3318,8 +3318,19 @@ picture {
   margin-left: auto;
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  .library__desc {
+    grid-template-columns: 1fr;
+    padding-bottom: 20px;
+  }
+}
 .library__desc p {
   padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .library__desc p {
+    padding-bottom: 30px;
+  }
 }
 .library .procedures__list li {
   background-color: #b3dfde;
