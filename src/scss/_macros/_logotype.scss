@@ -10,6 +10,12 @@
     margin-right: auto;
   }
 
+  &.logo--menu {
+    @include adaptive(767) {
+      display: none;
+    }
+  }
+
   &__btn {
     display: flex;
     align-items: flex-start;

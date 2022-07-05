@@ -29,6 +29,12 @@ body {
   @extend %fontsMuli;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include adaptive(1279) {
+    padding-top: 150px;
+  }
+  @include adaptive(767) {
+    padding-top: 99px;
+  }
 
   > .main {
     display: flex;

@@ -68,6 +68,9 @@
 			background-repeat: no-repeat;
 			background-position: center center;
 			background-size: cover;
+      @include adaptive(1023) {
+        left: 0;
+      }
 		}
 	}
 
